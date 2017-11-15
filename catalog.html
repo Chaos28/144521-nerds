@@ -25,25 +25,43 @@
 	</header>
 	<main class="shop-template">
 		<section class="filter">
-			<p><b>Стоимость:</b>
-			<!--форма с ползунком-->
-			</p>
-			<p><b>Сетка:</b>
-			<!--форма с выбором-->
-			</p>
-			<p><b>Особенности:</b>
-			<!--форма с чекбоксом-->
-			</p>
-			<button type="submit">Показать</button>
+			<form class="filter-form" action="https://echo.htmlacademy.ru" method="get" oninput="priceoutput.value=price.value">
+				<p>
+					<label for="price">Стоимость:</label>
+					<input type="range" min="1" max="15000" id="price" name="price">
+					
+				</p>
+				<div><output name="priceoutput">0</output></div>
+				<p>
+					<b>Сетка:</b>
+					<ul>
+						<li><label><input type="radio" name="grid" value="adaptive" checked>Адаптивная</label></li>
+						<li><label><input type="radio" name="grid" value="fixed">Фиксированная</label></li>
+						<li><label><input type="radio" name="grid" value="rubber">Резиновая</label></li>
+					</ul>
+				</p>
+				<p><b>Особенности:</b>
+					<ul>
+						<li><label><input type="checkbox" name="slider" checked>Слайдер</label></li>
+						<li><label><input type="checkbox" name="features">Блок преимуществ</label></li>
+						<li><label><input type="checkbox" name="News" checked>Новости</label></li>
+						<li><label><input type="checkbox" name="Gallery">Галерея</label></li>
+						<li><label><input type="checkbox" name="shopping bag">Корзина</label></li>
+
+					</ul>
+				</p>
+				<button type="submit">Показать</button>
+			</form>
 		</section>
 		<!--Можно ли боковую панель с фильтром оформить через тек <aside>?-->
 		<section class="templates">
-			<div><b>Сортировать:</b></div>
-			<div><ul class="sorting">
-				<li><a href="#">По цене</a></li>
-				<li><a href="#">По типу</a></li>
-				<li><a href="#">По названию</a></li>
-			</ul>
+			<div>
+				<b>Сортировать:</b>
+				<ul class="sorting">
+					<li><a href="#">По цене</a></li>
+					<li><a href="#">По типу</a></li>
+					<li><a href="#">По названию</a></li>
+				</ul>
 			<!--две стрелочки для сортировки Вверх и Вниз-->
 			</div>
 			
@@ -76,22 +94,43 @@
 		<section class="map">
 			<div class="contacts">
 				<h3>Nerds Design Studio</h3>
-		<!--Название студии Nerds с иным шрифтом (буква e с точками). Получается в этом блоке название лучше SVG картинкой вставить?-->
+		
 				<p>191186, Санкт-Петербург,<br>
 				   ул. Б. Конюшенная, д. 19/8<br>
 				   <br>
 				   тел. +7 (812) 275-75-75
 				</p>
-			<a class="button" href="#">Напишите нам</a>
+			<button type="button" class="modal-open">Напишите нам</button>
 			</div>
 			<img src="img/map.jpg" alt="карта проезда" width="1440" height="416">
-			<!--ФОРМА
-			<div class="write-us">
-			<b>Напишите нам</b>
 			
+			
+			
+			<div class="modal">
+			<b>Напишите нам</b>
+			<form class="write-us" action="https://echo.htmlacademy.ru" method="post">
+				<p>
+					<label for="user-name">Ваше имя:</label>
+					<input type="text" name="name" id="user-name" placeholder="Представьтесь, пожалуйста">
+				</p>
+				<p>
+					<label for="user-email">Ваш e-mail:</label>
+					<input type="email" name="email" id="user-email" placeholder="Для отправки ответа">
+				</p>
+				<p>
+					<label for="user-message">Текст письма:</label>
+					<textarea id="user-message" name="comment">В свободной форме</textarea>
+				</p>
+				<button type="submit">Отправить</button>
+
+				
+
+			</form>
+			<button type="button" class="modal-close">Закрыть</button>
 			</div>
-			-->
+			
 		</section>
+
 	<footer class="main-footer">
 			<h3 class="visually-hidden">Мы в социальных сетях!</h3>
 			<ul class="social-link">
