@@ -84,8 +84,6 @@ a.active {
 
 
 
-
-
 .features {
 	background-color: #eeeeee;
 
@@ -231,6 +229,15 @@ table .percent {
 .list-clients a:active {
 	opacity: 0.1;
 
+}
+
+.map {
+	margin-right: auto;
+	margin-left: auto;
+	width: 1440px;
+	height: 416px;
+	background-image: url("../img/map.jpg");
+	background-repeat: no-repeat;
 }
 
 .main-footer b {
