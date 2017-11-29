@@ -234,10 +234,11 @@ table .percent {
 .map {
 	margin-right: auto;
 	margin-left: auto;
-	width: 1440px;
+	width: auto;
 	height: 416px;
 	background-image: url("../img/map.jpg");
 	background-repeat: no-repeat;
+	background-position: 50% 50%;
 }
 
 .main-footer b {
