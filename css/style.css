@@ -3,6 +3,7 @@ body {
 	margin: 0;
 	padding: 0;
 
+
 	font-family: "Roboto", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
@@ -10,6 +11,14 @@ body {
 
 	background-color: #ffffff;
 }
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  }
 
 a {
 	text-decoration: none;
@@ -64,10 +73,7 @@ a.active {
 }
 
 /* маргин нужно убрать */
-.main-container {
-	margin-top: -22px;
 
-}
 
 
 .features {
@@ -80,6 +86,7 @@ a.active {
 	font-size: 55px;
 	line-height: 55px;
 	width: 385px;
+	margin-top: 0;
 	margin-bottom: 25px;
 
 }
@@ -265,6 +272,8 @@ table .percent {
 }
 
 .filter-form ul {
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 
@@ -297,6 +306,12 @@ div.item-info {
 	height: 231px;
 }
 
+.sorting ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
 .sorting a {
 	opacity: 0.3;
 
@@ -314,7 +329,10 @@ div.item-info {
 	font-weight: bold;
 }
 
-.templates ul {
+
+.template-navigation {
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 
@@ -323,7 +341,7 @@ div.item-info {
 	text-align: center;
 	box-sizing: border-box;
 	padding-top: 15px;
-	margin: 5px;
+	margin-right: 7px;
 	width: 50px;
 	height: 50px;
 	background-color: #eeeeee;
@@ -350,4 +368,111 @@ div.item-info {
 	background-color: #ffffff;
 	border: 3px solid #dbdbdb;
 
+}
+
+
+
+.main-navigation {
+	
+	display: flex;
+	justify-content: space-between;
+
+	min-height: 90px;
+
+}
+
+.features {
+	display: flex;
+	justify-content: space-between;
+}
+
+.service-item {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.service-item li {
+	display: flex;
+	flex-direction: column;
+	
+
+}
+
+.about-us {
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.about-us-statistics {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
+.list-clients {
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+
+}
+
+.main-footer {
+	display: flex;
+
+}
+
+.social-link {
+	margin-right: 140px;
+
+}
+
+.filter-form {
+	width: 260px;
+	display: flex;
+	flex-direction: column;
+
+}
+
+
+
+
+.filter-form fieldset {
+	margin-bottom: 56px;
+	border: none;
+}
+	
+.sorting {
+	width: 760px;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.templates-list {
+	width: 760px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+
+.item {
+	margin-bottom: 33px;
+
+}
+
+
+
+.template-navigation {
+	margin-top: 60px;
+	display: flex;
+
+}
+
+.shop-template {
+	display: flex;
+	justify-content: space-between;
 }
