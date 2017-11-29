@@ -285,6 +285,7 @@ table .percent {
 	text-align: center;
 }
 
+
 .filter-form ul {
 	margin: 0;
 	padding: 0;
@@ -395,8 +396,11 @@ div.item-info {
 	display: flex;
 	justify-content: space-between;
 
-	min-height: 90px;
 
+}
+
+.user-navigation {
+	display: flex;
 }
 
 .features .container {
