@@ -20,6 +20,7 @@ body {
   margin: -1px;
   }
 
+
 a {
 	text-decoration: none;
 	text-transform: uppercase;
@@ -28,9 +29,18 @@ a {
 }
 
 .main-header {
+	
 	background-color: #eeeeee;
 
 }
+
+
+.container {
+	width: 1160px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
 .main-navigation {
 	font-size: 16px;
 	line-height: 30px;
@@ -72,7 +82,7 @@ a.active {
 
 }
 
-/* маргин нужно убрать */
+
 
 
 
@@ -271,6 +281,10 @@ table .percent {
 	line-height: 18px;
 }
 
+.container h1 {
+	text-align: center;
+}
+
 .filter-form ul {
 	margin: 0;
 	padding: 0;
@@ -370,6 +384,10 @@ div.item-info {
 
 }
 
+.service-item a:not(.button-service) {
+	font-weight: bold;
+}
+
 
 
 .main-navigation {
@@ -381,15 +399,20 @@ div.item-info {
 
 }
 
-.features {
+.features .container {
 	display: flex;
 	justify-content: space-between;
 }
+
 
 .service-item {
 	display: flex;
 	justify-content: space-between;
 
+}
+
+ul.service-item {
+	padding: 0;
 }
 
 .service-item li {
@@ -436,7 +459,9 @@ div.item-info {
 
 }
 
-
+.filter-form input {
+	cursor: pointer;
+}
 
 
 .filter-form fieldset {
