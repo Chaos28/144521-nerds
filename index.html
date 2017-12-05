@@ -12,8 +12,8 @@
   	<header class="main-header">
   		<div class="container">
   		<nav class="main-navigation">
-  			<a href="#">
-  				<img class="logo" src="img/nerds-logo.png" width="160" height="65" alt="Лого студии Nerd's">
+  			<a class="logo" href="#">
+  				<img  src="img/nerds-logo.png" width="160" height="65" alt="Лого студии Nerd's">
   			</a>
   			<ul class="site-navigation">
   				<li><a href=#>Студия</a></li>
@@ -31,25 +31,43 @@
 	<main class="main-container">
 		
 		<section class="features">
-		<div class="container">
-			<h1 class="visually-hidden">Дизайн-студия Nerd's</h1>
-			
-			<div class="features-item">
-				<h2>Долго, дорого, скрупулезно</h2>
-				<p>Математически выверенный дизайн<br>
-				для вашего сайта или мобильного приложения.</p>
-				<a class="button-service" href="#">Узнать больше</a>
-			</div>
+		
+		
+
+
+
 			<div class="slider">
-			<img src="img/slide1.png" alt="преимущества студии 1" width="698" height="413">
-			<!--
-			Картинки для слайдера
-			<img src="img/slide2.png" alt="преимущества студии 2" width="663" height="430">
-			<img src="img/slide3.png" alt="преимущества студии 3" width="759" height="411">
-			-->
-			<!--Здесь будет слайдер с переключением преимуществ-->
-			</div>
-		</div>
+      <div class="container">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+        <div class="slider-controls">
+          <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+          <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+          <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+        </div>
+        <ul class="slider-list">
+          <li class="slider-item">
+            <h3>Долго, дорого,<br> скрупулезно.</h3>
+            <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+            <a class="slider-item-button button" href="#">Узнать больше</a>
+          </li>
+          <li class="slider-item">
+            <h3>Любим математику как никто другой</h3>
+            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a class="slider-item-button button" href="#">Узнать больше</a>
+          </li>
+          <li class="slider-item">
+            <h3>Только ночь,<br> только хардкор</h3>
+            <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+            <a class="slider-item-button button" href="#">Узнать больше</a>
+          </li>
+        </ul>  
+      </div>
+    </div>
+
+
 		</section>
 		
 		<section class="service container">
@@ -83,7 +101,7 @@
 		<section class="about-us container">
 			<div class="about-us-job">
 				
-					<h3>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h3>
+					<h3>Мы &mdash; маленькая, но гордая дизайн-студия из Краснодара.</h3>
 				
 				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем, не покладая рук, как роботы.</p>
 				<b>Выполняем заказы на разработку:</b>
@@ -118,42 +136,41 @@
 		<section class="our-clients container">
 		<h2 class="visually-hidden">С нами сотрудничают!</h2>
 			<ul class="list-clients">
-				<li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" alt="HTMLacademy" width="199" height="68"></a></li>
+				<li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" alt="HTMLacademy" width="199" height="9"></a></li>
 				<li><a href="#"><img src="img/logo-2.png" alt="Borodinski" width="209" height="90"></a></li>
-				<li><a href="#"><img src="img/logo-3.png" alt="Pink" width="185" height="52"></a></li>
-				<li><a href="#"><img src="img/logo-4.png" alt="Mishka" width="173" height="84"></a></li>
+				<li><a href="#"><img src="img/logo-3.png" alt="Pink" width="185" height="90"></a></li>
+				<li><a href="#"><img src="img/logo-4.png" alt="Mishka" width="173" height="90"></a></li>
 			</ul>
 		</section>
 		
 		<section class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651595!2d30.320894616394252!3d59.93879418187624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x84639e3d00b85f75!2sfrontend+developer!5e0!3m2!1sru!2s!4v1512477777959" width="1440" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
 			
+			<div class="modal">
 			
-			
-			<div class="moda visually-hidden">
-			<b>Напишите нам</b>
 			<form class="write-us" action="https://echo.htmlacademy.ru" method="post">
-				<p>
-					<label for="user-name">Ваше имя:</label><br>
-					<input type="text" name="name" id="user-name" placeholder="Представьтесь, пожалуйста">
-				</p>
-				<p>
-					<label for="user-email">Ваш e-mail:</label>
-					<input type="email" name="email" id="user-email" placeholder="Для отправки ответа">
-				</p>
-				<p>
-					<label for="user-message">Текст письма:</label>
-					<textarea id="user-message" name="comment">В свободной форме</textarea>
-				</p>
-				<button type="submit">Отправить</button>
-
 				
+					<b>Напишите нам</b>
+					<label for="user-name"><span>Ваше имя:</span>
+						<input type="text" name="name" id="user-name" pattern="^[А-Яа-яЁё\s]+$" placeholder="Представьтесь, пожалуйста">
+					</label>
+					
+					<label for="user-email"><span>Ваш e-mail:</span>
+						<input type="email" name="email" id="user-email" placeholder="Для отправки ответа">
+					</label>
+					
+					<label for="user-message"><span>Текст письма:</span>
+						<textarea id="user-message" name="comment">В свободной форме</textarea>
+					</label>
+									
+					<button type="submit">Отправить</button>
 
 			</form>
-			 <button type="button" class="modal-close">Закрыть</button>
-</div>
+			<button type="button" class="modal-close">Закрыть</button>
+			</div>
+
 			
-			
-			
+						
 		</section>
 		
 		</main>
@@ -166,7 +183,7 @@
 				   <br>
 				   тел. +7 (812) 275-75-75
 				</p>
-			<button type="button" class="modal-open">Напишите нам</button>
+			<a href="#" class="modal-open">Напишите нам</a>
 			</div>
 			<h3 class="visually-hidden">Мы в социальных сетях!</h3>
 			<ul class="social-link">
@@ -183,6 +200,9 @@
 		</footer>
 
 
-    
+    <script src="script.js"></script>
   </body>
 </html>
+
+
+
