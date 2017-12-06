@@ -819,7 +819,7 @@ ul.social-link {
 	box-sizing: border-box;
 	background-color: #fff;
 	box-shadow: 
-		0 15px 50px 0 rgba(0, 0, 0, .75)
+		0px 20px 40px 0px rgba(0, 1, 1, 0.75)
 	;
 
 }
@@ -1076,7 +1076,7 @@ ul.social-link {
 	background-image: url("../img/browser-active.svg");
 	background-repeat: no-repeat;
 	box-shadow:
-			0 4px 11px 2px #d5d5d5;
+			0 6px 20px 0px rgba(0, 1, 1, 0.75);
 
 }
 
