@@ -2,7 +2,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	
+	min-width: 1200px;
 
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
@@ -136,13 +136,7 @@ img {
 	width: 120px;
 }
 
-.shopping-bag:active {
-	padding-bottom: 7px;
-	box-shadow:
-		0px 2px 0 0 #fb565a;
-	
 
-}
 
 .shopping-bag::before {
 	content:"";
@@ -638,6 +632,7 @@ table .percent {
 	position: absolute;
 	box-sizing: border-box;
 	padding-left: 50px;
+
 	top: -435px;
 	left: 20px;
 	width: 319px;
@@ -652,7 +647,8 @@ div.contacts b {
 	line-height: 30px;
 	font-weight: bold;
 	margin: 0;
-	margin-bottom: 27px;
+	margin-top: 0px;
+	margin-bottom: 22px;
 	
 }
 
@@ -1055,7 +1051,8 @@ ul.social-link {
 	
 
 .sorting-type {
-		padding-top: 2px;
+
+		padding-top: 4px;
 		margin-bottom: 24px;
 }
 
@@ -1110,6 +1107,7 @@ ul.social-link {
 .sorting {
 	position: relative;
 	display: flex;
+	
 	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
@@ -1121,27 +1119,48 @@ ul.social-link {
 	
 }
 
-.sorting::before {
-	content:"";
-	position: absolute;
-	top: 2px;
-	right: 30px;
-	width: 12px;
-	height: 12px;
-	background-image: url("../img/icon-down-dir.svg");
-	background-repeat: no-repeat;
+.sorting li:not(:last-child) {
+	margin-right: 26px;
 }
 
-.sorting::after {
-	content:"";
-	top: 2px;
-	right: 0px;
+.sorting li:last-child {
+	margin-left: auto;
+}
+
+
+.sorting-up {
+	display: inline-block;
 	width: 12px;
 	height: 12px;
-	position: absolute;
+	font-size: 0;
 	background-image: url("../img/icon-up-dir.svg");
 	background-repeat: no-repeat;
-	opacity: 0.3;
+	opacity: 0.2;
+	
+}
+
+.sorting-down {
+	display: inline-block;
+
+	margin-right: 12px;
+	width: 12px;
+	height: 12px;
+	font-size: 0;
+	background-image: url("../img/icon-down-dir.svg");
+	background-repeat: no-repeat;
+	opacity: 0.2;
+}
+
+.sorting-up:hover,
+.sorting-down:hover {
+	fill: #a6a6a6;
+
+}
+
+.sorting-up:active,
+.sorting-down:active {
+	opacity: 1;
+
 }
 
 
@@ -1164,9 +1183,7 @@ ul.social-link {
 	opacity: 1;
 }
 
-.sorting li {
-	margin-right: 26px;
-}
+
 
 .sorting a {
 	opacity: 0.3;
@@ -1370,9 +1387,12 @@ ul.service-item {
 
 }
 
+
+
 .list-clients li:last-child {
 	position: relative;
-	margin-left: 32px;
+	margin-left: 35px;
+	margin-top: 2px;
 
 }
 
@@ -1393,6 +1413,7 @@ ul.service-item {
 	position: relative;
 	margin-top: 75px;
 	display: flex;
+	margin-bottom: 70px;
 
 }
 
