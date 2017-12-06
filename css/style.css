@@ -407,44 +407,7 @@ a.button-service {
 
 }
 
-.button-template-item {
-	display: block;
-	width: 200px;
-	height: 50px;
-	padding: 17px 0;
 
-	font-size: 16px;
- 	line-height: 18px;
- 	color: #ffffff;
- 	text-transform: uppercase;
- 	text-align: center;
- 	text-decoration: none;
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
-
-	background-color: #fb565a;
- 	border-radius: 3px;
-  	border: none;
-
-  	margin-bottom: 44px;
-
-}
-
-.button-template-item:hover {
-	background-color: #e74246;
-
-}
-
-.button-template-item:focus {
-	background-color: #e74246;
-}
-
-.button-template-item:active {
-	background-color: #d7373b;
-	-webkit-box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
-	        box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
-
-}
 
 .button-service.item-1,
 .button-service.item-2,
@@ -1185,7 +1148,7 @@ ul.social-link {
 	        flex-direction: column;
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	        
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
@@ -1195,6 +1158,66 @@ ul.social-link {
 	font-size: 16px;
 	line-height: 18px;
 
+}
+
+.template-item {
+
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 30px;
+	margin-top: 26px;
+	
+}
+
+.item-info p {
+
+
+	display: block;
+	width: 230px;
+	margin: 16px 0 30px 0;
+	
+	text-align: center;
+	color: #666666;
+
+
+}
+
+.button-template-item {
+	display: block;
+	width: 200px;
+	height: 50px;
+	padding: 17px 0;
+
+	font-size: 16px;
+ 	line-height: 18px;
+ 	color: #ffffff;
+ 	text-transform: uppercase;
+ 	text-align: center;
+ 	text-decoration: none;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+
+	background-color: #fb565a;
+ 	border-radius: 3px;
+  	border: none;
+
+  	margin-bottom: 44px;
+
+}
+
+.button-template-item:hover {
+	background-color: #e74246;
+
+}
+
+.button-template-item:focus {
+	background-color: #e74246;
+}
+
+.button-template-item:active {
+	background-color: #d7373b;
+	-webkit-box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+	        box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 
 }
 
@@ -1311,29 +1334,11 @@ ul.social-link {
 
 
 
-.template-item {
-
-	font-weight: bold;
-	font-size: 18px;
-	line-height: 30px;
-	margin-top: 26px;
-	margin-bottom: 0px;
-}
 
 
 
-.item-info p {
-
-	padding: 0;
-	margin: 0;
-	display: block;
-	width: 185px;
-	
-	text-align: center;
-	color: #666666;
 
 
-}
 
 
 .template-navigation {
